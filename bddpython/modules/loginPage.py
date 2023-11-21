@@ -7,7 +7,6 @@ class loginPage(PageObject):
     txt_password = PageElement(css='input[title$=password')
     btn_login = PageElement(class_name='button[id*=btnLogin')
     msg_alerta = PageElement(id='.alert-login')
-    msg_teste = PageElement(id='test')
 
     def logar(self, email, password):
         self.txt_email.send_keys(email)
