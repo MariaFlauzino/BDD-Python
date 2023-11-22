@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: docker run -d --name sonarqube -p 9000:9000 sonarqube
+    runs-on: ubuntu-latest
     permissions: read-all
     steps:
       - uses: actions/checkout@v2
